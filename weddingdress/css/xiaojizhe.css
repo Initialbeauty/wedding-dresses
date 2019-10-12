@@ -1,0 +1,198 @@
+*{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			
+			.section-one{
+				width: 100%;
+				background-color:#002729;
+				overflow: hidden;
+			}
+			.se-quan{
+				width:76%;
+				height:100%;
+				/*border:1px  solid green;*/
+				margin: 50px auto 0px;
+			}
+			
+			.se-left{
+				/*width:800px;*/
+				height:3600px;
+				/*border: 1px solid blue;*/
+			}
+			.se-left-one{
+				width:100%;
+				height:3%;
+				padding-top:6%;
+			}
+			.se-left-one>h4{
+				font-size: 16px;
+				color:dimgray;
+			}
+			.se-left-one>h5{
+				color:gainsboro;
+			}
+			.se-left-img{
+				width:100%;
+				height:95%;
+				border-top: 1px solid white;
+				border-bottom: 1px solid white;
+			}
+			.se-left-img>div{
+				margin:17% auto 0px;
+			}
+			.se-left-img>div:nth-of-type(1){
+				width: 70%;
+				height: 19%;
+				background-image: url(../img/img1/shenzen1.jpg);
+				/*background-image:url(img/img1/shenzen1.jpg);*/
+				background-size: 100% 100%;
+   				background-repeat: no-repeat;
+   				background-position: center;
+				}
+			.se-left-img>div:nth-of-type(2){
+				width: 70%;
+				height: 19%;
+				background-image: url(../img/img1/xiajizhe2.jpg);
+				/*background-image:url(img/img1/xiajizhe2.jpg);*/
+				background-size: 100% 100%;
+   				background-repeat: no-repeat;
+   				background-position: center;
+
+			}
+			.se-left-img>div:nth-of-type(3){
+				width: 70%;
+				height: 19%;
+				
+				background-image:url(../img/img1/xiajizhe3.jpg);
+				background-size: 100% 100%;
+   				background-repeat: no-repeat;
+   				background-position: center;
+			}
+			@media only screen and (min-width: 100px) and (max-width: 768px) {
+				.se-left{
+					overflow: hidden;
+					height:2150px;
+					
+				}
+				.se-left-img{
+					width:100%;
+					height:2000px;
+				}
+				.se-left-img>div{
+					height: 400px !important;
+					width: 100%;
+				}
+				.se-left-ul>li>a{
+					overflow: hidden;
+					width:20%;
+					height:10%;
+				}
+			}
+			.se-left-img div >a{
+				width: 100%;
+				height: 100%;
+				display: inline-block;
+			}
+			.se-left-img>div:nth-of-type(4){
+				width: 70%;
+				height: 23%;
+				background-image: url(../img/img1/shenzen4.jpeg);
+				/*background-image:url(../img/img1/zio4.jpg);*/
+				background-size: 100% 100%;
+   				background-repeat: no-repeat;
+   				background-position: center;
+   				padding-bottom:10%;
+			}
+			.se-left-foot{
+				height:100px;
+				width: 100%;
+				
+			}
+			.se-left-ul>li>a{
+				height: 40px;
+    			width:40%;
+    			text-align: center;
+				border-radius:100px;
+				border: 1px solid white;
+				line-height: 40px;
+				display: inline-block;
+				
+			}
+			.se-left-ul>li{
+				margin-top: 20px;
+			}
+			.se-left-ul>li>a{
+				float:left;
+				color: white;
+				text-decoration: none;
+			}
+			
+			.se-left-ul>li>a:last-of-type{
+				float: right;
+			}
+			.se-right{
+				height:100%;
+			}
+			.se-right-one{
+				/*width:300px;*/
+				height:100%;
+				padding-bottom: 20px;
+				border-bottom: 1px solid white;
+				margin: auto;
+			}
+			.se-right-one>input{
+    			border-radius:100px;
+    			height: 40px;
+    			width:95%;
+    			padding-left: 15px;
+    			margin-top: 40px;
+    			outline: none;
+    			border: none !important;
+    			
+    		}
+    		.se-right-two{
+    			border-bottom:1px solid white;
+    			
+    			
+    		}
+    		.se-right-two>h3{
+    			font-size: 16px;
+    		}
+    		.list-one{
+    			border:1px solid gray;
+    			padding: 15px;
+    			border-radius:5px;
+    			line-height: 30px;
+    			background-color: white;
+    			margin-bottom: 20px;
+    		}
+    		.list-one>li{
+    			border-bottom: 1px solid gainsboro;
+    		}
+    		.list-one>li:last-of-type{
+    			border: none;
+    		}
+    		.se-right-two>ul>li>a{
+    			color: #000000;
+    			text-decoration: none;
+    		}
+    		.list-one>li>a:hover{
+    			color:darkgray;
+    		}
+    		.se-right-three{
+    			
+    		}
+    		.list-two{
+    			padding-top:20px;
+    			line-height:40px;
+    		}
+    		.list-two>li>a{
+    			color:white;
+    			line-height: 20px;
+    		}
+    		.list-two>li>a:hover{
+    			color:#337AB7;
+    			text-decoration: none;
+    		}

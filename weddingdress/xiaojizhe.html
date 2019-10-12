@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/toubudibu1.css"/>
+		<link rel="stylesheet" href="css/xiaojizhe.css" />
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div class="huidao glyphicon glyphicon-chevron-up">
+	</div>    
+<nav class=" navbar navbar-default  nav-nav">
+  <div class="container container-nav">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header nav-log ">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo-a" href="#">
+      	<img class="logo" src="img/img1/logo.jpg" />
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav" id="nav-1">
+    <!--    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+        <li class="nav-li "><a  href="index.html">首页</a></li>
+        <li class="nav-li nav-yin" style="position: relative;"><a  href="index-cpzs.html">产品展示</a>
+        	<div class="yincan">
+        		<p style="margin-top: 30px;"><a href="#">婚纱</a></p>
+        		<p><a href="#">礼服</a> </p>
+        		<p><a href="#">龙凤褂</a></p>
+        		<p><a href="#">男装定制</a></p>
+        	</div>
+        </li>
+        <li class="nav-li  "><a  href="luckly.html">幸福见证</a></li>
+        <li class="nav-li nav-add"><a  class="nav-a" href="fwzx-one.html">服务质询</a></li>
+       <li class="nav-li nav-yin" style="position: relative;"><a href="index2.html">关于我们</a>
+        	<div class="yincan">
+        		<p style="margin-top: 30px;"><a href="#">联系我们</a></p>
+        		<p><a href="#">品牌历程</a> </p>
+        		<p><a href="#">展台展示</a></p>
+        		<p><a href="#">在线预约</a></p>
+        	</div>
+        </li>
+        <li class="nav-li"><a href="#">新浪微博</a></li>
+        
+        
+      
+      </ul>
+     
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>        
+
+   <!-- 导航栏结束-->
+       <script type="text/javascript">
+       	$(function(){
+       		
+		 
+	$(".navbar-nav li").click(function(){
+	  	$(this).eq(0).addClass("nav-add").siblings().removeClass("nav-add")
+	  	$("#nav-1 >li>a").eq($(this).index()).addClass("nav-a").parent().siblings("#nav-1 >li").children().removeClass("nav-a")
+	  })
+	     
+	$(".logo").parent().mouseenter(function(){
+			
+			 $(".logo").css("transform","rotateY(360deg)")
+			 $(".logo").css("transform-origin","50% 50%")
+			 $(".logo").css("transition","all 2s")
+
+    
+         
+	})
+	$(".logo").parent().mouseleave(function(){
+		 $(".logo").css("transform","rotateY(0deg)")
+		 $(".logo").css("transition","all 0s")
+
+})
+		var  btn=document.querySelector('.huidao');
+			 var screenTop=null, te=null; 
+	
+			 
+			 window.onscroll = function(){
+		 var	screenTop = document.documentElement.scrollTop ||document.body.scrollTop;
+			 	if(screenTop>0 ){
+			 		btn.style.display="block";
+			 	}else{
+			 		
+			 		btn.style.display="none";
+			 		
+			 	}
+			 	   btn.onclick=function(){
+			 	   	 clearInterval(te);
+			 	   	 te=setInterval(function( ){
+			 	   	 screenTop=screenTop-50;
+			 	   	 window.scrollTo(0,screenTop);
+			 	   	 if(screenTop<=0 ){
+			 	   	 	clearInterval(te);
+			 	   	 }
+			 	   	 	
+			 	   	 },20);
+			 	   	
+			 	   }
+
+
+   }
+
+       	})
+       </script>
+		<section>
+			<div class="section-one">
+				<div class="se-quan">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="se-left  col-md-8">
+						<div class="se-left-one">
+							<h4>深圳选婚纱小记选婚纱的新娘看看。深圳婚纱定制</h4>
+							<h5>2019-07-17&nbsp;&nbsp;11:39:56&nbsp; szlbl&nbsp;&nbsp; <span class="glyphicon glyphicon-eye-open"></span>&nbsp;30</h5>
+							</div>
+							<!--
+                            	作者：offline
+                            	时间：2019-07-26
+                            	描述：深圳选婚纱
+                            -->
+							<div class="se-left-img" id="se-left-img">
+								<div><a href="xiaojizhelunbo.html"></a></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+							<div class="se-left-foot">
+								<ul class="se-left-ul">
+									<li><a href="#">上一篇：在深圳定制婚纱的新娘  拒绝....</a><a href="#">下一篇：黎贝拉婚纱私人定制，我是....</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-1"></div>
+						<div class="se-right col-md-3">
+							<div class="se-right-one">
+								<input type="search" name="" required="" placeholder="Search" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="zh-CN">
+							</div>
+							<div class="se-right-two">
+								<h3>为你推荐</h3>
+								<ul class="list-one">
+									<li><a href="#">备婚剁手指南丨你心念念的春季折扣来啦！</a></li>
+									<li><a href="#">定制完美婚纱礼服的注意事项</a></li>
+									<li><a href="#">定制婚纱礼服注意事项</a></li>
+									<li><a href="#">深圳婚纱定制店教您选择婚纱礼服的不二法则</a></li>
+									<li><a href="#">深圳选婚纱小记选婚纱的新娘看看。深圳婚纱定制</a></li>
+									<li><a href="#">黎贝拉婚纱私人定制，我是我自己独一无二的美丽</a></li>
+								</ul>
+							</div>
+							<div class="se-right-three">
+								<ul class="list-two">
+									<li><a href="#">所有文章</a></li>
+									<li><a href="#">优惠活动</a></li>
+									<li><a href="#">公司新闻</a></li>
+									<li><a href="#">婚纱资讯</a></li>
+									<li><a href="#">婚纱视频</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		</section>
+		<div class="container-fluid">
+		   	<div class="row">
+		   		<div class="footer col-xs-12">
+		<div class="footer-1  col-lg-6 col-xs-12">
+		<div class="foot-links">
+		  <b>友情链接 :</b>
+		  <a href="http://www.szhbn.com" title="婚庆公司" target="_blank">婚庆公司</a>
+		
+		  /
+		  <a href="http://www.libeila.cc" title="婚纱礼服" target="_blank">婚纱礼服</a>
+		
+		  /
+		  <a href="http://nvzhuang.91jm.com" title="女装加盟" target="_blank">女装加盟</a>
+		
+		  /
+		  <a href="http://www.hfhxhl.com" title="草坪婚礼" target="_blank">草坪婚礼</a>
+		
+		  /
+		  <a href="http://lian.xiniu.com" title="犀牛云" target="_blank">犀牛云</a>
+		
+		  /
+		  <a href="http://www.szjhw.cn" title="深圳结婚网" target="_blank">深圳结婚网</a>
+		
+		  /
+		  <a href="http://www.idyhb.com" title="中式婚礼" target="_blank">中式婚礼</a>
+		
+		  /
+		  <a href="http://www.wed020.net" title="广州婚博会" target="_blank">广州婚博会</a>
+		
+		  /
+		  <a href="http://www.dusun.com.cn" title="大尚国际货源批发网" target="_blank">大尚国际货源批发网</a>
+		
+		  /
+		  <a href="http://www.xifustore.com" title="西装品牌" target="_blank">西装品牌</a>
+		
+		  /
+		  <a href="http://www.ownnz.com" title="女装加盟" target="_blank">女装加盟</a>
+		  
+		</div>
+		 </div>
+		   			
+		   			
+		  <div class="footer-2 col-lg-6 col-xs-12">
+		   <div class="foot-right">
+			 <p>深圳市黎贝拉服饰有限公司版权所有 2008-2018 粤ICP备14000295号</p>
+				<p>我们只推荐世界上最好的婚纱礼服!</p>
+		  </div>
+		   				
+		 </div>
+		   		</div>
+		   	</div>
+		   </div>
+	</body>
+</html>

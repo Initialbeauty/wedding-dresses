@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+	
+	
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.xiala{
+			
+			float: left;
+		}
+		.xiala ul li{
+			list-style: none;
+			color: white;
+			float: left;
+			margin-left: 20px;
+			font-size: 18px;
+			text-align: center;
+			height: 70px;
+			line-height: 70px;
+			cursor: pointer;
+		}
+		.bg{
+			background-color: #002729;
+		    overflow: hidden;
+		    position: relative;
+		    width: 100%;
+		    height: 950px;
+		}
+		
+		.caret {
+    border-top: 4px solid;
+    -webkit-transition: .25s;
+    transition: .25s;
+    -webkit-transform: scale(1.001);
+    transform: scale(1.001);
+    display: inline-block;
+    
+}
+        .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+       .input-search.form-control{
+       	border-radius: 200px;
+       	border-top-left-radius: 200px;
+       	border-top-right-radius: 200px;
+       	border-bottom-left-radius: 200px;
+       	border-bottom-right-radius: 200px;
+       	height: 70px;
+       	line-height: 70px;
+       	margin-top: 10px;
+       	width: 230px !important;
+       }
+       .wz{
+       
+       float: right;
+       margin-top: 15px;
+       }
+       .bg .container{
+       	position: relative;
+       	top: 0;
+       }
+       .wz1{
+       	position: absolute;
+       	/*top: 100px;*/
+       	left: 0;
+       }
+       .wz1 ul {
+       	width: 100%;
+       	overflow: hidden;
+       	flex-direction: row;
+       	flex: 1;
+       	justify-content: space-around;
+       	
+       	
+       }
+       .wz1 ul li{
+       	list-style: none;
+       	float: left;
+       	color: black;
+       	font-size: 16px;
+       	width :22%;
+       	margin: 0 10px;
+       	height: 395px;
+       	text-align: center;
+       }
+       .wz1 ul li span {
+       	background-color: white;
+       	display: block;
+       	width: 100%;
+       }
+       .wz1 ul li img{
+        width: 100%;
+         height: 358px;
+       }
+		.li-span{
+			position: relative;
+		}
+		.li-span .bg1{
+			position: absolute;
+			left: 0px;
+			top: 20px;
+			z-index: 9;
+			height: 400px;
+			width: 200px;
+			display: none;
+			background-color: black;
+			opacity: 0.85;
+		}
+		.li-span .bg1 ul li{
+			margin-top: -20px;
+			text-align: left;
+			font-size: 16px;
+		}
+		.xiala ul li:hover{
+			color: #777777;
+		}
+		.bg1{
+			margin-top: 30px;
+		}
+		
+		.bg1 ul{
+			color: white;
+			font-size: 16px;
+			width: 100%;
+			height: 100%;
+			padding-left: 5px;
+			
+		}
+		.bg1 ul li {
+		    list-style: none;
+		    margin-top: 20px;
+		    margin-left: 20%;
+		    width: 60%;
+		    text-align: left;
+		}
+		.row-1{
+			margin-right: 0px !important;
+		}
+		
+		
+		.xiala ul li{
+			text-align: center;
+			font-size: 13px;
+				padding: 0px;
+		}
+		.xiala ul{
+			padding-left: 27% ;
+		}
+		.diyi{
+			width: 86%;
+			overflow: hidden;
+		}
+		.wz1 ul li:hover{
+			transform: scale(1.1);
+		}
+		
+		@media only screen and (min-width: 992px) {
+			.xiala ul{
+				padding-left: 0px !important;
+			}		
+		}
+		
+			@media only screen and (min-width: 100px) and (max-width: 768px) {
+		.fanye{
+			top: 30px;
+				left: 0;
+			}
+			.huan{
+				width: 100px;
+				height: 1px;
+				margin-top: 30px;
+			}	
+			.wz{
+				width: 100%;
+				margin-top:  -10px;
+				padding: 10px;
+			}
+			.wz1 ul li {
+				height: 200px;
+				margin: 0;
+			}
+			.xiala{
+				width: 100%;
+				margin: 0px;
+				padding: 0px !important;	
+			}
+			.xiala ul{
+				padding-left: 0px !important;
+			}
+			
+			}
+			@media only screen and (min-width: 100px) and (max-width: 992px) {
+				.bg{
+					height:2200px ;
+				}
+				.wz1 ul li{
+					width: 38%;
+					height: 510px;
+				}
+				
+				.wz1 ul li img {
+					height: 470px;
+				}
+				.wz1 ul{
+					flex-wrap: wrap;
+					margin-left: 20px;
+					margin-top: 25px;
+				}
+			}
+			
+			@media only screen and (min-width: 768px) and (max-width: 992px) {
+			.wz{
+				padding: 10px;
+				margin-top: -20px;
+			}	
+		}
+		@media only screen and (min-width: 483px) and (max-width: 768px) {
+			.wz1 ul li{
+				margin: 0 10px;
+				height: 350px;
+			}
+			.wz1 ul li img{
+				height:298px ;
+			}
+			.bg{
+				height: 1600px;
+			}
+			.one{
+				margin-top: 30px !important;
+			}
+		}
+		@media only screen and (min-width:768px) and (max-width: 992px) {
+			
+			.fanye{
+				display: none;
+			}
+		}
+		@media only screen and (min-width: 100px) and (max-width: 768px) {
+				.fanye{
+				display: block !important;
+			}
+		}
+		@media only screen and (max-width: 500px){
+			    .wz1 ul li {
+			    	font-size:10px;
+			    	padding: 5px;
+			    	height: 200px;
+			    }
+			  
+			    .wz1 ul:first-of-type{
+			    	margin-top: 40px;
+			    }
+				.wz1 ul li img{
+					height: 168px;
+				}
+				.bg{
+					height: 950px;
+				}
+				.wz1 ul:last-of-type{
+					margin-top: -10px;
+				}
+		}
+		
+		
+		.wz1{
+			position: absolute;
+			top:80px;
+			left: 11%;
+			display: none;
+		}
+		.active{
+			display: block;
+		}
+		.fanye{
+			position: absolute;
+			bottom: 20px;
+			left: 42%;
+			font-size: 0;
+			display: block !important; 
+		}
+		
+		.fanye span{
+			background-color: white;
+			border: 1px solid #e4eaec;
+			color: #ccd5db;
+			padding: 5px 10px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		.fanye .fanye-active{
+			background-color: #393939;
+			border: 1px solid #393939;
+			color: white;
+		}
+		
+		@media only screen and (min-width: 992px)  {
+			#ul-box1{
+			margin-left: -100%;
+		}
+		#ul-box2{
+			margin-left: 100%;
+		}
+		
+		}
+		
+		
+		
+		#wz1-ul{
+			overflow: hidden;
+		}
+		
+
+	   .xiala li a{
+	   	text-decoration: none;
+	   	color: #FFFFFF;
+	   }
+	      .xiala li a:hover{
+	      	color: #3C3C3C;
+	      }
+	      .yincan{
+	      	z-index: 99;
+	      
+	      }
+	      .fanye{
+				width: 100%;
+				text-align: center;
+				left: 0;
+			}
+	</style>
+	</head>
+	    <link rel="stylesheet" href="css/bootstrap.css" />
+	    <link rel="stylesheet" type="text/css" href="css/toubudibu.css"/>
+		
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+		<script type="text/javascript" src="js/index1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		
+	<body>
+		
+		
+	<div class="huidao glyphicon glyphicon-chevron-up">
+	</div>    
+<nav class=" navbar navbar-default  nav-nav">
+  <div class="container container-nav">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header nav-log ">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo-a" href="#">
+      	<img class="logo" src="img/img/logo.jpg" />
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav" id="nav-1">
+    <!--    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+        <li class="nav-li "><a  href="index.html">首页</a></li>
+        <li class="nav-li nav-yin nav-add" style="position: relative;"><a  class="nav-a" href="index-cpzs.html">产品展示</a>
+        	<div class="yincan">
+        		<p style="margin-top: 30px;"><a href="index3.html">婚纱</a></p>
+        		<p><a href="cpzs-zym.html">礼服</a> </p>
+        		<p><a href="#">龙凤褂</a></p>
+        		<p><a href="index4.html">男装定制</a></p>
+        	</div>
+        </li>
+        <li class="nav-li"><a  href="luckly.html">幸福见证</a></li>
+        <li class="nav-li"><a href="fwzx-one.html">服务质询</a></li>
+       <li class="nav-li nav-yin" style="position: relative;"><a href="index2.html">关于我们</a>
+        	<div class="yincan">
+        		<p style="margin-top: 30px;"><a href="#">联系我们</a></p>
+        		<p><a href="#">品牌历程</a> </p>
+        		<p><a href="#">展台展示</a></p>
+        		<p><a href="#">在线预约</a></p>
+        	</div>
+        </li>
+        <li class="nav-li"><a href="https://weibo.com/libeila?is_hot=1">新浪微博</a></li>
+        
+        
+      
+      </ul>
+     
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>        
+
+   <!-- 导航栏结束-->
+   <div class="kong-div"></div>
+		
+		
+	
+	<section>
+	<img src="img/img/1557126859.jpg" width="100%" />
+	</section>
+	<section class="bg">
+		<div class="container">
+			<div class="row row-1">    
+			<div class="xiala col-md-9 col-xs-12">
+				<ul>
+					<li>全部</li>
+					<li class="li-span"> <a href="index3.html">婚纱</a>
+						<span class="caret"></span>
+	                 <div class="bg1">
+			  <ul>
+				<br />
+				<li>全部</li>
+				<li>Pronovias</li>
+				<li>Chic</li>
+				<li>Helena&nbsp;kolan</li>
+				<li>Dany</li>
+				<li>Lazaro</li>
+				<li>Saiil&nbsp;kobeisy</li>
+				<li>
+				<br />
+				</li>
+			</ul>
+		</div>
+					
+					</li>
+					<li>礼服</li>
+					<li>龙凤褂</li>
+					<li> <a href="index4.html">男装定制</a></li>
+		
+				</ul>
+			</div>
+				<div class="wz  col-md-3 col-xs-12">
+				<input type="text" class="form-control"
+					name="content"
+					value
+					placeholder="search" />
+			    </div>
+			</div>
+		</div>
+		<div class="wz1 active" id="wz1-ul">
+			<ul id="ul-box1">
+				<li class="one"><img src="img/img/1513924131.jpg" title="046"/>
+				<span>046</span>
+				</li>
+				<li class="one"><img src="img/img/1557140824.jpg" title="BRONCE"/>
+				<span>BRONCE</span>
+				</li>
+				<li><img src="img/img/1528971967.jpg" title="CAMMIE"/>
+				<span>CAMMIE</span>
+				</li>
+				<li><img src="img/img/1561110440.jpg" title="Pronovias-2019"/>
+				<span>Pronovias-2019</span>
+				</li>
+			</ul>
+			<ul id="ul-box2">
+				<li><img src="img/img/1557140779.jpg" title="Saiid&nbsp;Kobeisy-3479"  />
+				<span>Saiid&nbsp;Kobeisy-3479</span>
+				</li>
+				<li><img src="img/img/1553754114.jpg" title="Pronovias-1"/>
+				<span>Pronovias-1</span>
+				</li>
+				<li><img src="img/img/1553769024.jpg" title="Pronovias-2"/>
+				<span>Pronovias-2</span>
+				</li>
+				<li><img src="img/img/1507781127.jpg" title="Simona"/>
+				<span>Simona</span>
+				</li>
+			</ul>
+		</div>
+		<div class="wz1" >
+			<ul >
+				<li><img src="img/img/1508140604.jpg" title="Maram"/>
+				<span>Maram</span>
+				</li>
+				<li><img src="img/img/1553761393.jpg" title="Pronovias-4"/>
+				<span>Pronovias-4</span>
+				</li>
+				<li><img src="img/img/1508133724.jpg" title="Fiona"/>
+				<span>Fiona</span>
+				</li>
+				<li><img src="img/img/1508144127.jpg" title="Alexa"/>
+				<span>Alexa</span>
+				</li>
+			</ul>
+			<ul >
+				<li><img src="img/img/1553755422.jpg" title="Pronnovias-5"/>
+				<span>Pronnovias-5</span>
+				</li>
+				<li><img src="img/img/1508134509.jpg" title="一字肩婚纱"/>
+				<span>一字肩婚纱</span>
+				</li>
+				<li><img src="img/img/1554172347.jpg" title="Pronovias-6"/>
+			    <span>Pronovias-6</span>
+				</li>
+				<li><img src="img/img/1554190064.jpg" title="taskona"/>
+					<span>taskona</span>
+				</li>
+			</ul>
+		</div>
+		<div class="wz1">
+			<ul>
+				<li><img src="img/img/1554190099.jpg" title="Crvstal-7"/>
+					<span>Crvstal-7</span>
+				</li>
+				<li><img src="img/img/1554190512.jpg" title="Crvstal-10"/>
+					<span>Crvstal-10</span>
+				</li>
+				<li><img src="img/img/1554189971 (1).jpg" title=">Crvstal-11"/>
+					<span>Crvstal-11</span>
+				</li>
+				<li><img src="img/img/1553760146.jpg" title="Pronovias-2018"/>
+					<span>Pronovias-2018</span>
+				</li>
+			</ul>
+			<ul>
+				<li><img src="img/img/1553759768.jpg"  title="Kobeisy-79"/>
+					<span>Kobeisy-79</span>
+				</li>
+				<li><img src="img/img/1553760461.jpg" title="Kobeisy-2019"/>
+				    <span>Pvias-2019</span>
+				</li>
+				<li><img src="img/img/1554189925.jpg" title="Pdfbjs-2"/>
+					<span>Pdfbjs-2</span>
+				</li>
+				<li><a href="cpzs-zym.html"><img src="img/img/1554189930.jpg" title="Simona" /></a>
+				<span>Simona</span>
+				</li>
+			</ul>
+		</div>
+		<div class="huan"></div>
+		<div class="fanye">
+			<span class="previous">上一页</span>
+			<span class="fanye-active a">1</span>
+			<span class="a">2</span>
+			<span class="a">3</span>
+			<span class="next">下一页</span>
+		</div>
+	</section>
+	<!--翻页-->
+	
+   <div class="container-fluid">
+		   	<div class="row">
+		   		<div class="footer col-xs-12">
+		<div class="footer-1  col-lg-6 col-xs-12">
+		<div class="foot-links">
+		  <b>友情链接 :</b>
+		  <a href="http://www.szhbn.com" title="婚庆公司" target="_blank">婚庆公司</a>
+		
+		  /
+		  <a href="http://www.libeila.cc" title="婚纱礼服" target="_blank">婚纱礼服</a>
+		
+		  /
+		  <a href="http://nvzhuang.91jm.com" title="女装加盟" target="_blank">女装加盟</a>
+		
+		  /
+		  <a href="http://www.hfhxhl.com" title="草坪婚礼" target="_blank">草坪婚礼</a>
+		
+		  /
+		  <a href="http://lian.xiniu.com" title="犀牛云" target="_blank">犀牛云</a>
+		
+		  /
+		  <a href="http://www.szjhw.cn" title="深圳结婚网" target="_blank">深圳结婚网</a>
+		
+		  /
+		  <a href="http://www.idyhb.com" title="中式婚礼" target="_blank">中式婚礼</a>
+		
+		  /
+		  <a href="http://www.wed020.net" title="广州婚博会" target="_blank">广州婚博会</a>
+		
+		  /
+		  <a href="http://www.dusun.com.cn" title="大尚国际货源批发网" target="_blank">大尚国际货源批发网</a>
+		
+		  /
+		  <a href="http://www.xifustore.com" title="西装品牌" target="_blank">西装品牌</a>
+		
+		  /
+		  <a href="http://www.ownnz.com" title="女装加盟" target="_blank">女装加盟</a>
+		  
+		</div>
+		 </div>
+		   			
+		   			
+		  <div class="footer-2 col-lg-6 col-xs-12">
+		   <div class="foot-right">
+			 <p>深圳市黎贝拉服饰有限公司版权所有 2008-2018 粤ICP备14000295号</p>
+				<p>我们只推荐世界上最好的婚纱礼服!</p>
+		  </div>
+		   				
+		 </div>
+		   		</div>
+		   	</div>
+		   </div>
+
+	
+	</body>
+</html>

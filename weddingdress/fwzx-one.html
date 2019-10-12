@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.bg-box{
+				background-color: #002729;
+			}
+			.bg-a{
+				height: 96px;
+				width: 160px;
+			}
+			.container{
+				max-width: 100%;
+			}
+			.row{
+				margin-right: -15px;
+				margin-left: -15px;
+			}
+			.bg-box .met-news-body{
+				box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+			}
+			.bg-box .met-news-list{
+				background-color: #002729;
+				padding: 30px;
+			}
+			.bg-box .met-news-list ul{
+				padding: 0;
+				list-style: none;
+			}
+			.bg-box .met-news-list ul li{
+				border-bottom: 1px solid #f0f2f5;
+                padding-bottom: 30px;
+                margin-bottom: 30px;
+			} 
+			.r-left{
+				padding-right: 20px;
+			}
+			.a-1 img{
+				width: 160px;
+			}
+			.r-body, .r-left, .media-right {
+            display: table-cell;
+            vertical-align: top;
+            }
+            h4{
+            	margin-top: 0 !important; 
+            	margin-bottom: 0 !important;
+            	color: white !important;
+            	cursor: pointer;
+            }
+			.bg-box .met-news-list ul li p.des {
+                color: #c9caca;
+                font-size: 14px;
+                font-weight: 300;
+                margin-bottom: 10px;
+            }
+            .met-news-list ul li h4:hover{
+            	color: #1B6D85 !important;
+            }
+            .col-md-3{
+            	width: 25%;
+            	top: 50px;
+            }
+            .met-news-bar {
+            background: #002729;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+            }
+            button, input, select, textarea {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            }
+            button, input, optgroup, select, textarea {
+            margin: 0;
+            font: inherit;
+            color: inherit;
+            }
+            .form-group {
+            margin-bottom: 20px;
+            }
+            .input-search {
+            position: relative;
+            }
+            .input-search-btn+.form-control {
+		    padding-right: 50px;
+			}
+			.input-search .form-control {
+			border-radius: 200px;
+			}
+			.form-control:not(select) {
+			-webkit-appearance: none;
+			}
+			.form-control {
+			-webkit-box-shadow: none;
+			box-shadow: none;
+			-webkit-transition: -webkit-box-shadow .25s linear,border .25s linear,color .25s linear,background-color .25s linear;
+			-o-transition: box-shadow .25s linear,border .25s linear,color .25s linear,background-color .25s linear;
+		    transition: box-shadow .25s linear,border .25s linear,color .25s linear,background-color .25s linear;
+			}
+			.form-control {
+			    display: block;
+			    width: 100%;
+			    height: 36px;
+			    padding: 6px 15px;
+			    font-size: 14px;
+			    line-height: 1.57142857;
+			    color: #76838f;
+			    background-color: #fff;
+			    background-image: none;
+			    border: 1px solid #e4eaec;
+			    border-radius: 3px;
+			    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+			    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+			    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+			    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+			    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+			}
+		   .list-group-item a{
+		   	list-style: none;
+		   	color: #222222;
+		   }
+		   ul li{
+		   	display: block;
+		   	list-style: disc;
+		   	padding-top: 20px;
+		   	padding-bottom: 10px;
+		   }
+		   ul li a{
+		   	color: white;
+		   	font-size: 16px;
+		   }
+		   ul li a:hover{
+		   	list-style: disc;
+		   	color: blue;
+		   }
+		   .fanye{
+				
+				bottom: 10px;
+				text-align: center;
+				font-size: 0;
+				
+			}
+			 
+			.fanye span{
+				background-color: white;
+				border: 1px solid #e4eaec;
+				color: #ccd5db;
+				padding: 5px 10px;
+				cursor: pointer;
+				font-size: 16px;
+				display: inline-block;
+				text-align: center;
+				
+				
+			}
+			.fanye .fanye-active{
+				background-color: #393939;
+				border: 1px solid #393939;
+				color: white;
+			}
+			.met-page-ajax:nth-of-type(2){
+				display: none;	
+			}
+			.active{
+				display: block !important;
+			}
+			.wz1{
+				display: none ;
+			}
+			@media only screen and (min-width: 768px) and (max-width: 992px) {
+			 .xp{
+			 	width: 100%;
+			 }
+			}
+			@media only screen and (min-width: 100px) and (max-width: 768px) {
+			.ss{
+				display: none;
+			}
+			.recommend h3{
+				color: #FFFFFF;
+			}
+			.r-left div{
+				width: 100px;
+				
+			}
+			
+			.form-group{
+				width: 100%;
+			}
+			.a-1 img{
+				width: 100px;
+			}
+		    }
+		    @media only screen and (min-width: 992px)  {
+		    	 .idd{
+		    	margin-top: 200px;
+		    }
+		    }
+		   
+		</style>
+	</head>
+	 <link rel="stylesheet" href="css/bootstrap.css" />
+	    <link rel="stylesheet" type="text/css" href="css/toubudibu.css"/>
+	    <script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+		<script type="text/javascript" src="js/fwzx-1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+	<body>
+		
+	<div class="huidao glyphicon glyphicon-chevron-up">
+	</div>    
+<nav class=" navbar navbar-default  nav-nav">
+  <div class="container container-nav">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header nav-log ">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo-a" href="#">
+      	<img class="logo" src="img/img/logo.jpg" />
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav" id="nav-1">
+    <!--    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+        <li class="nav-li "><a  href="index.html">首页</a></li>
+        <li class="nav-li nav-yin " style="position: relative;"><a  href="index-cpzs.html">产品展示</a>
+        	<div class="yincan">
+        		<p style="margin-top: 30px;"><a href="#">婚纱</a></p>
+        		<p><a href="#">礼服</a> </p>
+        		<p><a href="#">龙凤褂</a></p>
+        		<p><a href="#">男装定制</a></p>
+        	</div>
+        </li>
+        <li class="nav-li"><a  href="luckly.html">幸福见证</a></li>
+        <li class="nav-li nav-add"><a href="fwzx-one.html"  class="nav-a">服务质询</a></li>
+       <li class="nav-li nav-yin" style="position: relative;"><a href="index2.html">关于我们</a>
+        	<div class="yincan">
+        		<p style="margin-top: 30px;"><a href="#">联系我们</a></p>
+        		<p><a href="#">品牌历程</a> </p>
+        		<p><a href="#">展台展示</a></p>
+        		<p><a href="#">在线预约</a></p>
+        	</div>
+        </li>
+        <li class="nav-li"><a href="https://weibo.com/libeila?is_hot=1">新浪微博</a></li>
+        
+        
+      
+      </ul>
+     
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>        
+
+   <!-- 导航栏结束-->
+	
+	
+	
+   <div class="kong-div"></div>
+   
+   <section class="bg-box">
+   	<img src="img/img/1508501837.jpg" width="100%" />
+   	<div class="container idd">
+    <div class="row">
+    	<div class="col-md-9 met-news-body">
+    		<div class="row">
+    			<div class="met-news-list">
+    			<ul class="met-page-ajax  wz1" style="display: block;">
+    			<li>
+    				<div class="a-1">
+    					
+    					<div class="r-left">
+    						<a href="xiaojizhe.html">
+    						<img src="img/img/1560495401.jpg" />
+    						</a>
+    					</div>
+    				
+    					<div class="r-body">
+    						<h4>注意事项</h4>
+    						<br />
+    						<p class="des ss">定制的奢侈让潮流重新回归到那个时代，越来越多的人选择用独一无二
+    							来表达自己的态度。许多大牌婚纱近年来都在设计理念上不断地改良和创新，从颜色到长短
+    							、从细节到做工，每一季的婚纱都在发生着变化。这样让许多不愿意墨守成规的新
+    							娘有了更多的选择。　　　　非传统婚纱之路　　伊...</p>
+    						<p class="des">2019-07-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div>
+    			</li>
+    			<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1563934291.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>定制完美婚纱礼服的注意事项</h4>
+    						<br />
+    						<p class="des ss">婚纱礼服定做是很多准新人非常关心的一个问题，一件完美的婚礼服，不仅需要考究的面料、适宜的款
+    							式和精致的工艺，婚礼服尺寸也是至关重要且不容忽视的第一步。那么定制完美的嫁衣需要注意哪些方
+    							面呢?　　　　1：选择喜欢并且适合自己的样式　　婚纱礼服的样式非常多，新人们在选...</p>
+    						<p class="des">2019-07-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    			<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1563763817.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>定制婚纱礼服的注意事项</h4>
+    						<br />
+    						<p class="des ss">定制婚纱要注意什么?定制婚纱贵不贵?这自然是各位新娘们瘦腰考虑的问
+    							题了，比较婚纱礼服不能当作日常服饰来穿，太贵的话难免浪费，当前的婚纱礼服价格参
+    							差不齐，价格在几百到几千不等，以北京为例，婚纱礼服定制的价格从1000元起，一般的
+    							价格集中在2000元——8000元...</p>
+    						<p class="des">2019-07-22&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    			<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1563414415.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>深圳婚纱定制店教您选择婚纱礼服的不二法则</h4>
+    						<br />
+    						<p class="des ss">深圳婚纱定制网小编今天带你了解选择婚纱礼服的不二法则，无论
+    							你是什么婚礼形式，一定能够最完美的自己。深圳婚纱定制店教您如何选择婚纱之一：
+    							户外主题婚纱　　无论是绿色恬静的花园，还是浪漫宁静的海边，户外的婚纱一定要简
+    							洁方便。简约大方的A字裙，轻盈飘逸的女神款...</p>
+    						<p class="des">2019-07-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    			<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1563335839.jpeg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>深圳选婚纱小记选婚纱的新娘看看。深圳婚纱定制</h4>
+    						<br />
+    						<p class="des ss">婚纱的赞美　　对于很多准备要结婚的美丽新娘们选一款适合自己的婚
+    							纱是一件头疼的事，因为现在的婚纱款式多、花样多，所以看花了眼，不知道自己适合
+    							什么，那么接下来由黎贝拉婚纱礼服私人定制会馆给大家讲解一下婚纱的种类以及整体风格。
+    							首先我们来了解下婚纱的种类有哪些，在...</p>
+    						<p class="des">2019-07-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    				<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1562899992.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>在深圳定制婚纱的新娘 拒绝墨守成规</h4>
+    						<br />
+    						<p class="des ss">定制的奢侈让潮流重新回归到那个时代，越来越多的人选择用独一无
+    							二来表达自己的态度。许多大牌婚纱近年来都在设计理念上不断地改良和创新，从颜色
+    							到长短、从细节到做工，每一季的婚纱都在发生着变化。这样让许多不愿意墨守成规的
+    							新娘有了更多的选择。　　　　非传统婚纱之路　　伊...</p>
+    						<p class="des">2019-07-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    				<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1562998026.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>深圳婚纱定制完全指南</h4>
+    						<br />
+    						<p class="des ss">一件完美的婚纱是女人一生的梦想,相信每个准新娘都会对自己
+    							身披婚纱嫁衣时的样子充满期待。在这个一生中最不能大意马虎的日子里，只有真正
+    							适合自己的定制婚纱礼服，才能给新娘们留下令自己终身难忘的美丽回忆，定制婚
+    							纱也就成为准新娘的首选，那么婚纱定制的工期应该如何安排呢？...</p>
+    						<p class="des">2019-07-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    			</ul>
+    			<ul class="met-page-ajax wz1">
+    			<li>
+    				<div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1555309490.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>备婚剁手指南丨你心念念的春季折扣来啦！</h4>
+    						<br />
+    						<p class="des ss">...</p>
+    						<p class="des">2019-04-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div>
+    			</li>
+    			<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1552031350157686.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>女神节福利丨圆你公主梦，三重惊喜等你来！</h4>
+    						<br />
+    						<p class="des ss">...</p>
+    						<p class="des">2019-07-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    			<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1547712621.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>Bestie Tea Time丨知你，致你，邀你</h4>
+    						<br />
+    						<p class="des ss">我问过很多人“什么是真正的闺蜜”，他们答道：我知道她在那里，她知道我在这里，
+    							一回头都找得到对方；我们都有各自的人生，但我们知道彼此的世界都会有对方的身影；我们是彼此的底气，
+    							像家人一样真诚又永远不可动摇的存在；当你穿上嫁衣出嫁时，
+    							我哭的比谁都厉害。这几句话，相信...</p>
+    						<p class="des">2019-07-22&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    			<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1535362288.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>PRONOVIAS颠覆传统嫁衣的‘革新’时代-SHOW/2018</h4>
+    						<br />
+    						<p class="des ss">2018.9.2号一场“婚纱艺术大赏”野蛮来袭由
+    							黎贝拉take的世界顶级婚纱品牌PronoviasPRONOVIAS 
+    							FASHION SHOW空降深圳中洲万豪酒店为大家开启一场关乎女性嫁衣觉醒的新纪元缤纷错落的极致画面
+    							空间感十足的生动表达简约肆意洒脱的秀场格调...</p>
+    						<p class="des">2019-07-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    			<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1534227512.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>深圳夏季婚博会|全球十几个超大牌婚纱云集于此，限时不限量！</h4>
+    						<br />
+    						<p class="des ss">婚纱的赞美　　对于很多准备要结婚的美丽新娘们选一款适合自己的婚
+    							纱是一件头疼的事，因为现在的婚纱款式多、花样多，所以看花了眼，不知道自己适合
+    							什么，那么接下来由黎贝拉婚纱礼服私人定制会馆给大家讲解一下婚纱的种类以及整体风格。
+    							首先我们来了解下婚纱的种类有哪些，在...</p>
+    						<p class="des">2019-07-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    				<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1533267395.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>6000元福利！| 【荼白婚纱&轻奢礼服】给你最戳心的七夕礼~</h4>
+    						<br />
+    						<p class="des ss">“七夕”到了，想好和女朋友怎么过了吗？买束玫瑰花，9朵99朵999朵吃个饭
+    							，中餐西餐街边餐发红包转个帐520、1314送礼物？...男女都悸动的节日，“爱”当然可以大
+    							谈特谈，但是你知道女孩子心底最想要的是什么？女孩子最
+    							想要的就是拥有一件属于自己的婚纱“我觉得婚...</p>
+    						<p class="des">2019-07-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    				<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1521532704.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>深圳99场真爱定制婚礼，0元首发！原来婚礼可以白捡的？！</h4>
+    						<br />
+    						<p class="des ss">一件完美的婚纱是女人一生的梦想,相信每个准新娘都会对自己
+    							身披婚纱嫁衣时的样子充满期待。在这个一生中最不能大意马虎的日子里，只有真正
+    							适合自己的定制婚纱礼服，才能给新娘们留下令自己终身难忘的美丽回忆，定制婚
+    							纱也就成为准新娘的首选，那么婚纱定制的工期应该如何安排呢？...</p>
+    						<p class="des">2019-07-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    			</ul>
+    			<ul class="met-page-ajax wz1">
+    			<li>
+    				<div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1560752346.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>婚纱倾心专属定制！</h4>
+    						<br />
+    						<p class="des ss">...</p>
+    						<p class="des">2019-04-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div>
+    			</li>
+    			<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1560495401.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>女神节福利丨圆你公主梦，三重惊喜等你来！</h4>
+    						<br />
+    						<p class="des ss">...</p>
+    						<p class="des">2019-07-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    			<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1560411854.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>Bestie Tea Time丨知你，致你，邀你</h4>
+    						<br />
+    						<p class="des ss">我问过很多人“什么是真正的闺蜜”，他们答道：我知道她在那里，她知道我在这里，
+    							一回头都找得到对方；我们都有各自的人生，但我们知道彼此的世界都会有对方的身影；我们是彼此的底气，
+    							像家人一样真诚又永远不可动摇的存在；当你穿上嫁衣出嫁时，
+    							我哭的比谁都厉害。这几句话，相信...</p>
+    						<p class="des">2019-07-22&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    			<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1562057031.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>PRONOVIAS颠覆传统嫁衣的‘革新’时代-SHOW/2018</h4>
+    						<br />
+    						<p class="des ss">2018.9.2号一场“婚纱艺术大赏”野蛮来袭由
+    							黎贝拉take的世界顶级婚纱品牌PronoviasPRONOVIAS 
+    							FASHION SHOW空降深圳中洲万豪酒店为大家开启一场关乎女性嫁衣觉醒的新纪元缤纷错落的极致画面
+    							空间感十足的生动表达简约肆意洒脱的秀场格调...</p>
+    						<p class="des">2019-07-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    				<li><div class="a-1">
+    					<div class="r-left">
+    						<img src="img/img/1510799953811425.jpg" />
+    					</div>
+    					<div class="r-body">
+    						<h4>Pronovias星闻|巴萨球星Sergi未婚妻Coral的百变新娘造型</h4>
+    						<br />
+    						<p class="des ss">著名巴萨球员Sergi Roberto的未婚妻 Coral Simanovich的百变新娘造型，
+    							或高贵气质，或名媛得体，或妩媚性感，或清新活泼… 尽在全新AtelierPronovias2018！Look 
+    							1: Ronda款的率真美Rond...</p>
+    						<p class="des">2019-07-24&nbsp;&nbsp;szlbl </p>
+    					</div>
+    				</div></li>
+    			</ul>
+    		<div class="fanye">
+			<span class="previous">上一页</span>
+			<span class="fanye-active a">1</span>
+			<span class="a">2</span>
+			<span class="a">3</span>
+			<span class="next">下一页</span>
+		    </div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class=" col-xs-12 col-md-3 xp ">
+    		<div class="row">
+    			<div class="met-news-bar">
+    				<form method="get" action="http://www.libeila.cc/search.php">
+    					<input type="hidden" name="lang" value="cn" />
+    					<input type="hidden" name="class1" value="122" />
+    					<div class="form-group">
+    						<div class="input-search">
+    							<!--<button type="submit" class="input-search-btn"></button>-->
+    							<input type="text" class="form-control" name="searchword" placeholder="search" />
+    						</div>
+    					</div>
+    				</form>
+    			</div>
+    		</div>
+    		<div class="recommend news-list-md">
+    			<h3>为您推荐</h3>
+    			<ul class="list-group list-group-bordered">
+    				<li class="list-group-item"><a href="#" title="备婚剁手指南丨你心念念的春季折扣来啦！">备婚剁手指南丨你心念念的春季折扣来啦！</a></li>
+    				<li class="list-group-item"><a href="#" title="深圳婚纱定制哪里好 梦想中的婚纱">深圳婚纱定制哪里好 梦想中的婚纱</a></li>
+    				<li class="list-group-item"><a href="#" title="带你欣赏奢华的高级定制婚纱">带你欣赏奢华的高级定制婚纱</a></li>
+    				<li class="list-group-item"><a href="#" title="深圳婚纱定制哪里好 梦想中的婚纱">黎贝拉婚纱礼服新郎定制西服的5个讲究</a></li>
+    				<li class="list-group-item"><a href="#" title="定制完美婚纱礼服的注意事项">定制完美婚纱礼服的注意事项</a></li>
+    				<li class="list-group-item"><a href="#" title="定制婚纱礼服的注意事项">定制婚纱礼服注意事项</a></li>
+    			</ul>
+    		</div>
+    		<ul class="column">
+    		<li><a href="#" title="所有文章">所有文章</a></li>	
+    		<li><a href="#" title="优惠活动">优惠活动</a></li>
+    		<li><a href="#" title="公司新闻">公司新闻</a></li>
+    		<li><a href="#" title="婚纱资讯">婚纱资讯</a></li>
+    		<li><a href="#" title="婚纱视频">婚纱视频</a></li>
+    		</ul>
+    	</div>
+    </div>
+   	</div>
+   </section>
+   <div class="container-fluid">
+		   	<div class="row">
+		   		<div class="footer col-xs-12">
+		<div class="footer-1  col-lg-6 col-xs-12">
+		<div class="foot-links">
+		  <b>友情链接 :</b>
+		  <a href="http://www.szhbn.com" title="婚庆公司" target="_blank">婚庆公司</a>
+		
+		  /
+		  <a href="http://www.libeila.cc" title="婚纱礼服" target="_blank">婚纱礼服</a>
+		
+		  /
+		  <a href="http://nvzhuang.91jm.com" title="女装加盟" target="_blank">女装加盟</a>
+		
+		  /
+		  <a href="http://www.hfhxhl.com" title="草坪婚礼" target="_blank">草坪婚礼</a>
+		
+		  /
+		  <a href="http://lian.xiniu.com" title="犀牛云" target="_blank">犀牛云</a>
+		
+		  /
+		  <a href="http://www.szjhw.cn" title="深圳结婚网" target="_blank">深圳结婚网</a>
+		
+		  /
+		  <a href="http://www.idyhb.com" title="中式婚礼" target="_blank">中式婚礼</a>
+		
+		  /
+		  <a href="http://www.wed020.net" title="广州婚博会" target="_blank">广州婚博会</a>
+		
+		  /
+		  <a href="http://www.dusun.com.cn" title="大尚国际货源批发网" target="_blank">大尚国际货源批发网</a>
+		
+		  /
+		  <a href="http://www.xifustore.com" title="西装品牌" target="_blank">西装品牌</a>
+		
+		  /
+		  <a href="http://www.ownnz.com" title="女装加盟" target="_blank">女装加盟</a>
+		  
+		</div>
+		 </div>
+		   			
+		   			
+		  <div class="footer-2 col-lg-6 col-xs-12">
+		   <div class="foot-right">
+			 <p>深圳市黎贝拉服饰有限公司版权所有 2008-2018 粤ICP备14000295号</p>
+				<p>我们只推荐世界上最好的婚纱礼服!</p>
+		  </div>
+		   				
+		 </div>
+		   		</div>
+		   	</div>
+		   </div>
+	</body>
+</html>

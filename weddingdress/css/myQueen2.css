@@ -1,0 +1,101 @@
+/*
+			 *section部分的开始
+			 * */
+			*{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			.myQueen-setwo{
+				
+			}
+			.myQueen-setwo>img{
+				padding-top: 30px;
+				width:80%;
+				height: 626px;
+				display:inline-block;
+				margin: 0 auto;
+			}
+			.bigBox{
+				height: 630px;
+				position: relative;
+				padding: 10px;
+			}
+			.box{
+				width:100%;
+				height:80%;
+				position: relative;
+				overflow: hidden;
+				
+			}
+			.box>.ul{
+				
+				height: 100%;
+				overflow: hidden;
+				
+			}
+			.box>.ul li{
+				float: left;
+				width:100%;
+				height: 100%;
+			}
+			.bigBox>.ol{
+				margin-top: 30px;
+				margin-left: calc(50% - 30px);
+				display: inline-block;
+				
+			}
+			
+			.li-box1{
+				
+				width: 60px;
+				height: 60px;
+				background-image: url(img/img1/15370099.jpg) ;
+				display: inline-block;
+				margin-left: 10px;
+			}
+			
+			
+			.bigBox>.ol li.active{
+				background-color: orange;
+			}
+			@media only screen and (min-width: 100px) and (max-width: 640px) {
+				span{
+					text-align: center;
+				}
+			}
+			span{
+				margin-left: 10%;
+				padding-top: 10px;
+				position: absolute;
+				top: calc(50% - 50px);
+				color: white;
+			}
+			span>a{
+				 margin-left: 5px;
+				color: white;
+			}
+			span>a:hover{
+				text-decoration: none;
+				color: white;
+			}
+			.left{
+				left:5px;
+				
+				
+			}
+			.right{
+				right:5px;
+				
+			}
+			.myQueen-setwo-right{
+				
+			}
+			.myQueen-setwo-right>h1{
+				padding-left: 50px;
+				padding-top: 20px;
+				text-align: center;
+			}
+			/*
+			 *section部分的结尾
+			 * */
